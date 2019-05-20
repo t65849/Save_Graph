@@ -1,0 +1,18 @@
+{
+  "appenders": {
+    "assistant": {
+      "type": "file",
+      "filename": "logs/assistant.log",
+      "maxLogSize": 5120000,
+      "backups": 30
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": [
+        "assistant"
+      ],
+      "level": "debug"
+    }
+  }
+}
